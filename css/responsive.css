@@ -1,0 +1,150 @@
+/* Medium Layout: 1280px. */
+@media only screen and (min-width: 992px) and (max-width: 1200px) { 
+
+.contact-img img {
+  width: 250px;
+}
+
+ 
+}
+/* Tablet Layout: 768px. */
+@media only screen and (min-width: 768px) and (max-width: 991px) { 
+
+.logo-img {
+  text-align: center;
+}
+.header-text h2 {
+  font-size: 55px;
+}
+.header-text {
+  padding: 185px 100px;
+}
+.author-food-img {
+  margin-top: 50px;
+  text-align: center;
+}
+.contact-img {
+  margin-bottom: 35px;
+  text-align: center;
+}
+.footer-area {
+  font-size: 15px;
+}
+.footer-social-link i {
+  font-size: 22px;
+}
+
+
+}
+/* Mobile Layout: 320px. */
+@media only screen and (max-width: 767px) { 
+
+.navbar-toggle .icon-bar {
+  background: #fff;
+}
+.navbar-toggle {
+  float: right;
+}
+.header-text {
+  padding: 57px;
+}
+.header-text h2 {
+  font-size: 27px;
+}
+.mainmenu {
+  padding-right: 49px;
+  top: 10px;
+}
+.social-link {
+  right: 10px;
+  top: 22px;
+}
+.is-sticky .mainmenu ul.nav.navbar-nav li a {
+  font-size: 15px;
+  padding: 8px;
+}
+.mainmenu ul.nav.navbar-nav li {
+  padding: 4px 0;
+}
+.mainmenu ul.nav.navbar-nav li a {
+  padding: 9px 0;
+}
+.section-title {
+  font-size: 16px;
+}
+.igrendient-text {
+  padding: 11px;
+}
+.testomonial-list {
+  padding: 10px;
+}
+.single-testomonial-iteam  p {
+  font-size: 15px;
+}
+#testomonial-carousel::before {
+  font-size: 9px;
+  left: -7px;
+  top: -3px;
+}
+.contact-img img {
+  padding: 5px;
+}
+.contact-form button {
+  font-size: 16px;
+  margin: 23px;
+  padding: 5px 22px;
+
+
+}
+/* Wide Mobile Layout: 480px. */
+@media only screen and (min-width: 480px) and (max-width: 767px) { 
+.is-sticky .header-area:after {
+  background: #000 none repeat scroll 0 0;
+  content: "";
+  height: 100%;
+  left: 0;
+  opacity: 0.7;
+  position: absolute;
+  top: 0;
+  width: 100%; z-index: -1;
+}
+.is-sticky .logo-img img {
+  height: 66px;
+  padding: 6px 0;
+  width: auto;
+}
+.is-sticky .mainmenu ul.nav.navbar-nav li {
+  padding: 0 37px;
+}
+.is-sticky .mainmenu ul.nav.navbar-nav li a {
+  font-size: 18px;
+  padding: 10px 10px;
+}
+.is-sticky .social-link {
+  top: 20px;
+}
+.mainmenu ul.nav.navbar-nav li a {
+  padding: 10px 10px;
+}
+.mainmenu ul.nav.navbar-nav li {
+  padding: 0 17px;
+}
+.mainmenu {
+  top: 10px;
+}
+.social-link {
+  right: 21px;
+  top: 24px;
+}
+.header-text h2 {
+  font-size: 42px;
+}
+.contact-img img {
+  margin-left: 5px;
+  padding-bottom: 50px;
+  width: 206px;
+}
+.contact-form button {
+  margin: 60px auto 0;
+}
+}

@@ -1,0 +1,476 @@
+@charset "utf-8";
+/* Base CSS */
+a:focus { outline: 0 solid }
+img {
+    max-width: 100%;
+    height: auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+    font-weight: 700;font-family:  'Yeseva One', cursive;
+}
+html,
+body {height: 100% ;
+   font-family: 'Gentium Book Basic', serif;font-size:16px;
+}
+a {
+    color: #333;
+}
+a:hover { text-decoration: none }
+
+
+.top-area {
+  position: relative;
+}
+li.smoth-menu  a {
+    color: #fff;
+}
+.mainmenu ul li:hover {
+    color: #fff;
+background: #ddb231;
+}
+.mainmenu ul li:hover a {
+    color: #00010:00 AM 3/30/2021;
+}
+.slide-bg-1{background: url(../images/header_img.jpg);background-size: cover;}
+.slide-bg-2{background: url(../images/bg1.jpg);background-size: cover;}
+.top-area-bg{background: url(../images/header_img.jpg);background-size: cover;
+height: 100%;
+left: 0;
+position: absolute;
+top: 0;
+width: 100%;}
+.slide-control {
+  color: #fff;
+  font-size: 45px;
+  left: 20px;
+  margin-top: 80px;
+  position: absolute;
+  top: 35%; opacity: 0.2;
+}
+.slide-control:hover {
+  color: #fff;opacity: 1;
+}
+
+.slide-control.right {
+  left: auto;
+  right: 20px;
+}
+
+/*carosel fade effect//*/
+.carousel-fade .carousel-inner .item {
+  -webkit-transition-property: opacity;
+          transition-property: opacity;
+}
+.carousel-fade .carousel-inner .item,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  opacity: 0;
+}
+.carousel-fade .carousel-inner .active,
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
+}
+.carousel-fade .carousel-inner .next,
+.carousel-fade .carousel-inner .prev,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+.carousel-fade .carousel-control {
+  z-index: 2;
+}
+/**/
+
+
+.sticky-wrapper {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+}
+.header-area{width:100%;}
+.logo-img img {
+  height: 85px;
+}
+/*sticky style*/
+.is-sticky .header-area:after {
+  background: #000 none repeat scroll 0 0;
+  content: "";
+  height: 100%;
+  left: 0;
+  opacity: 0.7;
+  position: absolute;
+  top: 0;
+  width: 100%; z-index: -1;
+}
+.is-sticky .logo-img img {
+  height: 66px;
+  padding: 6px 0;
+  width: auto;
+}
+.is-sticky .mainmenu ul.nav.navbar-nav li a {
+  padding: 23px 10px;
+}
+.is-sticky .social-link {
+  top: 20px;
+}
+.header-area:after, .logo-img img, .mainmenu ul.nav.navbar-nav li a, .social-link{transition: all 0.6s ease 0s;}
+
+/**/
+
+
+
+.is-sticky .mainmenu ul.nav.navbar-nav li.active a {color:#cc9900;}
+
+
+.header-text{padding: 150px;}
+.header-text h2{background:url(../images/Decoration-white.png);background-position: center bottom;
+background-repeat: no-repeat;
+color: #FFFFFF;
+font-size: 75px;
+font-weight: bold;
+padding-bottom: 70px;    margin-bottom: 50px;}
+
+
+
+.btn-filled {
+ font-size: 15px;
+  color: #fff;
+  display: inline-block;
+  padding: 10px 30px;
+  position: relative;
+  text-transform: uppercase;
+  z-index: 1;
+   margin: 0 10px;
+}
+.btn-filled:after {
+  background: none repeat scroll 0 0 #000000;
+  content: "";
+  height: 100%;
+  left: 0;
+  opacity: 0.6;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+}
+.btn-filled.yellow-color-btn:after{background:#dccb79;color:#fff;}
+
+.social-link {
+  position: absolute;
+  right: 0;
+  top: 40px;
+}
+.social-link a {
+  color: #ddb231;
+  display: inline-block;
+  font-size: 20px;
+  padding-left: 5px;
+}
+
+
+
+
+
+
+.header-text-area {
+  position: relative;
+    padding-top: 80px;
+}
+
+
+
+
+
+
+
+
+
+
+.about-area{background: url(../images/pattern.jpg)}
+.section-padding{padding:80px;}
+
+
+.section-title {
+  background: url("../images/Divider.png") no-repeat scroll center bottom transparent;
+  color: #CC9900;
+  margin-bottom: 30px;
+  padding-bottom: 50px;
+  font-weight: bold;
+  text-align:center;
+}
+.about-text{font-size:16px;margin-top:50px;color:#4c4c4c;}
+
+.author-img {
+  margin-top: 50px;
+}
+
+.igredients-area{position:relative;}
+.paralax-bg{background-size: cover;
+height: 100%;
+left: 0;
+position: absolute;
+top: 0;
+width: 100%;background-attachment:fixed;}
+
+.igredients-bg{background: url(../images/bg1.jpg);}
+
+.igrendient-text {
+  position: relative;
+  z-index: 1;
+  padding: 30px;
+  font-size:16px;
+  color:#fff;
+}
+.igrendient-text p{margin-bottom:30px;}
+.igrendient-text:after , .testomonial-list:after{
+  background: none repeat scroll 0 0 #000000;
+  content: "";
+  height: 100%;
+  left: 0;
+  opacity: 0.7;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+}
+.section-title.white-section-title {
+  background: url("../images/Divider1.png") no-repeat scroll center bottom transparent;
+  color: #fff;
+}
+
+.food-menu-area{ background: url("../images/pattern1.jpg");}
+
+
+.menu-text h2 {
+  border-bottom: 1px solid #CC9900;
+  color: #CC9900;
+  font-size: 20px;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+}
+.menu-text h2 span {
+   float:right;
+   font-weight:normal;
+}
+.menu-text {
+  margin-bottom: 40px;
+}
+
+.menu-text.special {
+  border: 1px solid #CC9900;
+  padding: 10px;
+  position: relative;
+}
+.menu-text.special:before {
+  background: none repeat scroll 0 0 #CC9900;
+  color: #FFFFFF;
+  content: "special";
+  opacity: 0.7;
+  padding: 2px 10px;
+  position: absolute;
+  right: -1px;
+  top: -27px;
+    text-transform: uppercase;
+}
+.menu-text.special p {
+  margin-bottom: 0;
+}
+
+.testomonial-area{position:relative;}
+.testomonial-bg{background:url(../images/bg2.jpg)}
+
+.testomonial-list {
+  color: #FFFFFF;
+  font-size: 25px;
+  padding: 30px 50px;
+  position: relative;
+  z-index: 1;
+}
+
+.testomonial-author {
+  font-size: 18px;
+}
+
+#testomonial-carousel:before {
+color: #CCCCCC;
+content: "";
+font-family: fontawesome;
+font-size: 30px;
+height: 0;
+left: -34px;
+position: absolute;
+top: -14px;
+}
+
+.contact-area{background:url(../images/pattern.jpg)}
+.contact-img img {
+  margin-left: 15px;
+  width: 255px;
+}
+
+
+
+
+
+
+
+
+
+
+.contact-form {
+  margin-top: 30px;
+  text-align: left;
+}
+
+.contact-form form label {
+  color: #CC9900;
+  text-align: left;
+}
+
+.contact-form form input {
+  border: 1px solid #000000;
+  color: #000000;
+  margin-bottom: 25px;
+  padding: 5px;
+  width: 190px;
+}
+.contact-form form input:hover {
+  border: 1px solid #cc9900;
+}
+
+.contact-form form select {
+  border: 1px solid #000000;
+  padding: 5px;
+  width: 173px;
+}
+.contact-form button {
+  background: none repeat scroll 0 0 #CC9900;
+  border: medium none;
+  color: #FFFFFF;
+  display: block;
+  font-size: 18px;
+  margin: 0 auto;
+  padding: 5px 47px;
+}
+
+.footer-area {
+  background: none repeat scroll 0 0 #191919;
+  color: #FFFFFF;
+  font-size: 16px;
+  padding-bottom: 60px;
+  padding-top: 60px;
+}
+.footer-area .section-title {
+  background: url("../images/image22.png") no-repeat scroll center bottom transparent;
+  color: #FFFFFF;
+  font-size: 21px;
+  
+}
+
+.footer-area .footer-wighet strong {
+  color: #FFFFFF;
+  font-weight: bold;
+}
+
+.footer-cards {
+  color: #FFFFFF;
+  margin-top: 27px;
+}
+.footer-cards i {
+  color: #FFFFFF;
+  font-size: 22px;
+  margin: 0 6px;
+}
+.footer-social-link i {
+  color: #FFFFFF;
+  display: inline-block;
+  font-size: 27px;
+  padding: 0 7px;
+}
+.footer-social-link {
+  margin-top: 23px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.img-titles {
+    height: 60px;
+    padding-left: 35px;
+    position: absolute;
+    top: 140px;
+    width: 75%;
+	 z-index: 1;
+	 display: inline-block;
+}
+.img-titles:after {
+ background: none repeat scroll 0 0 #000000;
+  content: "";
+  height: 100%;
+  left: 0;
+  opacity: 0.5;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+   border-right: 3px solid #fff;
+}
+.img-titles h4 {
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 0;
+    margin-top: 6px;
+    padding: 5px;
+	
+}
+.img-titles p {
+    font-size: 12px;
+    margin-top: -7px;
+    padding: 5px;
+	color: #fff;
+}

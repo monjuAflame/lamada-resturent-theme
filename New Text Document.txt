@@ -1,0 +1,162 @@
+
+
+
+Button before/after die a opacity set kora niyom//
+
+.btn-filled {
+ font-size: 15px;
+  color: #fff;
+  display: inline-block;
+  padding: 10px 30px;
+  position: relative;
+  text-transform: uppercase;
+  z-index: 1;
+   margin: 0 10px;
+}
+.btn-filled:after {
+  background: none repeat scroll 0 0 #000000;
+  content: "";
+  height: 100%;
+  left: 0;
+  opacity: 0.6;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+
+
+
+
+
+ //menu sticky//
+
+
+     /* Sticky nav */ in main js///
+    $(".header-area").sticky({topSpacing:0});
+	
+	need://jquery.sticky.js
+
+
+//sticky bar opacity korte or animation korar style///
+
+/*sticky style*/
+.is-sticky .header-area:after {
+  background: #000 none repeat scroll 0 0;
+  content: "";
+  height: 100%;
+  left: 0;
+  opacity: 0.7;
+  position: absolute;
+  top: 0;
+  width: 100%; z-index: -1;
+}
+.is-sticky .logo-img img {
+  height: 60px;
+  padding: 6px 0;
+  width: auto;
+}
+.is-sticky .mainmenu ul.nav.navbar-nav li a {
+  padding: 23px 10px;
+}
+.is-sticky .social-link {
+  top: 20px;
+}
+.header-area:after, .logo-img img, .mainmenu ul.nav.navbar-nav li a, .social-link{transition: all 0.6s ease 0s;}
+
+/**/
+
+
+
+
+
+
+
+
+
+
+
+// Smoth scroll  //
+
+   /* //Smoth Scroll*/
+	
+Html : 	<li class="smoth-menu"><a href="#about">about</a></li>
+	
+	
+MAin.js: 	$('.smoth-menu a').bind('click',function(event){
+		var $anchor = $(this);
+		var headerH = '65';
+		
+		$('html, body').stop().animate({
+			scrollTop: $($anchor.attr('href')).offset().top - headerH + "px"
+		}, 1000, 'easeInOutExpo');
+		event.easeInOutExpo();
+	});
+	
+need://jquery.easing.min.js
+	
+	
+	
+// Parallax scrolling //
+  Html : <div data-velocity="-.1" class="paralax-bg slide-bg-1" ></div>
+  Main.js: $('.paralax-bg').scrolly({bgParallax: true});
+	
+Nedd://jquery.parallax.scrolly.js
+
+bootsrap full scren slider  or bootstrap text/testomonail slider
+
+<div id="fawesome-carousel" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+        <li data-target="#fawesome-carousel" data-slide-to="0" class="active"></li>
+        <li data-target="#fawesome-carousel" data-slide-to="1"></li>
+    </ol>
+ 
+    <div class="carousel-inner" role="listbox">
+        <div class="item active">
+ 
+        </div>
+        <div class="item">
+ 
+        </div>
+    </div>
+ 
+    <a class="left fawesome-control" href="#fawesome-carousel" role="button" data-slide="prev"><i class="fa fa-angle-left"></i></a>
+    <a class="right fawesome-control" href="#fawesome-carousel" role="button" data-slide="next"><i class="fa fa-angle-right"></i></a>
+</div>
+
+
+Ussing jqury Fade effect slider and everything
+
+/*carosel fade effect// style*/
+.carousel-fade .carousel-inner .item {
+  -webkit-transition-property: opacity;
+          transition-property: opacity;
+}
+.carousel-fade .carousel-inner .item,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  opacity: 0;
+}
+.carousel-fade .carousel-inner .active,
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
+}
+.carousel-fade .carousel-inner .next,
+.carousel-fade .carousel-inner .prev,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+.carousel-fade .carousel-control {
+  z-index: 2;
+}
+/**/
+
+Html:  		<div id="top-slide-carousel" class="carousel slide carousel-fade" data-ride="carousel">
+
+
+
